@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+ 
+  body {
+    background-color: #f9fafb;
+    padding: 60px;
+  }
+ 
+  .wrapper {
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px;
+    margin: auto;
+  }
+ 
+  .sidebar {
+    background-color: #f3f4f6;
+    padding: 20px;
+    min-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+ 
+  .content {
+    padding: 16px;
+    flex: 1;
+  }
+ 
+  .card {
+    position: relative;
+  }
+ 
+  .message {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    background: #fef08a;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  }
+ 
+  .message .close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+ 
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 80px);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+ 
+  .box {
+    width: 80px;
+    height: 60px;
+    border-radius: 6px;
+  }
+ 
+  .red { background-color: red; }
+  .orange { background-color: orange; }
+  .blue { background-color: blue; }
+  .green { background-color: green; }
+ 
+  button#addBox {
+    padding: 10px 20px;
+    background: #e3e5ea;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
